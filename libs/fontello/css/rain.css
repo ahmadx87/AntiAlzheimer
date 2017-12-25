@@ -1,0 +1,98 @@
+@font-face {
+  font-family: 'rain';
+  src: url('../font/rain.eot?13641027');
+  src: url('../font/rain.eot?13641027#iefix') format('embedded-opentype'),
+       url('../font/rain.woff2?13641027') format('woff2'),
+       url('../font/rain.woff?13641027') format('woff'),
+       url('../font/rain.ttf?13641027') format('truetype'),
+       url('../font/rain.svg?13641027#rain') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'rain';
+    src: url('../font/rain.svg?13641027#rain') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-rain"]:before, [class*=" icon-rain"]:before {
+  font-family: "rain";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-rainok:before { content: '\e800'; } /* '' */
+.icon-rainstar:before { content: '\e801'; } /* '' */
+.icon-rainstar-empty:before { content: '\e802'; } /* '' */
+.icon-raindown-open:before { content: '\e803'; } /* '' */
+.icon-rainpencil-1:before { content: '\e804'; } /* '' */
+.icon-raincancel:before { content: '\e805'; } /* '' */
+.icon-rainminus:before { content: '\e806'; } /* '' */
+.icon-rainplus:before { content: '\e807'; } /* '' */
+.icon-raininfo-outline:before { content: '\e808'; } /* '' */
+.icon-rainth:before { content: '\e809'; } /* '' */
+.icon-rainemo-coffee:before { content: '\e80a'; } /* '' */
+.icon-rainarrows-cw:before { content: '\e80b'; } /* '' */
+.icon-rainoff:before { content: '\e80c'; } /* '' */
+.icon-rainplay:before { content: '\e80d'; } /* '' */
+.icon-rainstop:before { content: '\e80e'; } /* '' */
+.icon-rainok-1:before { content: '\e80f'; } /* '' */
+.icon-rainwrench:before { content: '\e810'; } /* '' */
+.icon-rainemo-thumbsup:before { content: '\e811'; } /* '' */
+.icon-rainwifi-1:before { content: '\e812'; } /* '' */
+.icon-rainpencil:before { content: '\e813'; } /* '' */
+.icon-rainkey:before { content: '\e814'; } /* '' */
+.icon-raindoc-text:before { content: '\e815'; } /* '' */
+.icon-raindownload:before { content: '\e816'; } /* '' */
+.icon-rainadjust:before { content: '\e817'; } /* '' */
+.icon-rainupload:before { content: '\e818'; } /* '' */
+.icon-rainpalette:before { content: '\e819'; } /* '' */
+.icon-rainkeyboard:before { content: '\e81a'; } /* '' */
+.icon-rainwrench-1:before { content: '\e81b'; } /* '' */
+.icon-rainpipette:before { content: '\e81c'; } /* '' */
+.icon-rainplay-circled2:before { content: '\e81d'; } /* '' */
+.icon-rainemo-displeased:before { content: '\e81e'; } /* '' */
+.icon-rainemo-unhappy:before { content: '\e81f'; } /* '' */
+.icon-rainemo-happy:before { content: '\e820'; } /* '' */
+.icon-rainmenu:before { content: '\f0c9'; } /* '' */
+.icon-rainlist-bullet:before { content: '\f0ca'; } /* '' */
+.icon-rainangle-double-up:before { content: '\f102'; } /* '' */
+.icon-rainangle-double-down:before { content: '\f103'; } /* '' */
+.icon-rainunlink:before { content: '\f127'; } /* '' */
+.icon-rainsliders:before { content: '\f1de'; } /* '' */
+.icon-raintrash:before { content: '\f1f8'; } /* '' */
+.icon-rainchart-bar:before { content: '\f526'; } /* '' */

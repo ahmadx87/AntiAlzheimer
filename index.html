@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8" />
+      <meta name="format-detection" content="telephone=no" />
+      <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, target-densitydpi=medium-dpi" />
+      <link rel="stylesheet"  href="libs/jQM-flat/jquery.mobile.flatui.css">
+	  <link rel="stylesheet" type="text/css" href="libs/fontello/css/rain.css" />
+	  <link rel="stylesheet" type="text/css" href="libs/jquery-alert.css" />
+      <link rel="stylesheet" type="text/css" href="css/index.css" />    
+	  <script type="text/javascript" src="libs/fastclick.min.js"></script>
+      <script type="text/javascript" src="cordova.js"></script>
+      <script type="text/javascript" src="libs/jquery-2.0.3.min.js"></script>
+      <script type="text/javascript" src="libs/jQueryMobile/jquery.mobile-1.4.5.js"></script>
+	  <script src="libs/jquery-alert.js"></script>
+      <script src="js/JavaScript.js"></script>
+      <title>AYSANOOR Smart WiFi Controller</title>
+   </head>
+   <body>
+      <div id="app">
+         <div  id="solidColor" data-role="page">
+            <div data-role="header" data-id="header" data-position="fixed" data-theme="a" data-tap-toggle="false" data-hide-during-focus="false">
+              
+               <h1>آنتی آلزایمر</h1>
+			   <a href="" class="aboutButton"><i class="icon-raininfo-outline headerIcon onOffButton"></i></a>
+            </div>
+			
+            <div data-role="content"  style="overflow: hidden; height:100%">
+               <div class="silderDiv">
+                  <p class="SliderTitle">فاصله زمانی: <span class="sliderVal brightnessVal"></span></p>
+                  <!-- not required? : <label for="brightnessSlider" class="ui-hidden-accessible">Slider:</label>  -->
+                  <div id="brightnessSliderDiv">
+                     <input id="brightnessSlider" style="width:100%;" type="range" name="brightnessSlider" min="2" max="30" data-highlight="true"/>
+                  </div>
+               </div>
+               <br>
+
+			   <div id="colorDiv">
+			       <p id="colorNameText"></p>
+			   </div>
+
+			   <div style="width:100%;">
+			  <a href="" class="ui-btn" id="startButtonWords" >شروع</a>
+			  </div>
+			  
+            </div>
+			
+            <div id="footer" data-role="footer" data-id="footer" data-position="fixed" data-tap-toggle="false" data-theme="a" data-tap-toggle="false">
+               <div id="navbar1" data-role="navbar">
+                  <ul>
+                     <li><a id="map-button" href="#solidColor"  class="footerButton ui-state-persist colorTab" data-theme="a" data-transition="flow"><i class="icon-rainpipette footerIcon"></i><br>کلمات رنگی</a></li>
+                     <li><a class="footerButton tableTab" href="#Animation" data-transition="flow"><i style="" class="icon-rainth footerIcon" ></i><br>جدول شولتی</a></li>
+                   
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div  id="Animation" data-role="page">
+            <div data-role="header" data-id="header" data-position="fixed" data-theme="a" data-tap-toggle="false" data-hide-during-focus="false">
+                        
+                 <h1>آنتی آلزایمر</h1>
+			    <a href="" class="aboutButton"><i class="icon-raininfo-outline headerIcon onOffButton"></i></a>
+            </div>
+            <div data-role="content" >
+			
+			<div class="silderDiv">
+					<p class="SliderTitle" style="font-size:1.1em; border-bottom:1px solid black; padding-bottom:.5em;">بهترین رکورد: <span class="sliderVal recordVal"></span></p>
+                  <p class="SliderTitle" style="font-size:1.1em;"><span class="sliderVal tableTimeVal"></span></p>
+                  <!-- not required? : <label for="brightnessSlider" class="ui-hidden-accessible">Slider:</label>  -->
+                  <div id="brightnessSliderDiv">
+                   
+                  </div>
+               </div>
+               <br>
+
+
+			   <div style="width:100%;">
+			  <a href="" class="ui-btn" id="tableRefresh" >شروع</a>
+			  </div>
+			
+			<div id="listContainer">
+			
+			<div id="numTapMsg" style="margin: auto; text-align: center; font-size:1.5em;"> </div>
+			<div id="currentNum" style="margin: auto; text-align: center; font-size:1.4m;"> </div>
+			<table id="shTable"></table>
+  
+		</div>
+
+
+
+			
+	
+            <div  data-role="footer" data-id="footer" data-position="fixed" data-tap-toggle="false" data-theme="a" data-tap-toggle="false" >
+               <div id="navbar2" data-role="navbar">
+                  <ul>
+                     <li><a href="#solidColor"  class="footerButton colorTab" data-theme="a" data-transition="flow"><i class="icon-rainpipette footerIcon"></i><br>کلمات رنگی</a></li>
+                     <li><a  class="footerButton ui-state-persist tableTab" href="#Animation" data-transition="flow"><i style="" class="icon-rainth footerIcon"></i><br>جدول شولتی</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+		 <div id="successMsg" style="display: none;"></div>
+      </div>
+</div>
+   </body>
+</html>
